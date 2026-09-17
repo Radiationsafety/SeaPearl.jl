@@ -60,7 +60,10 @@ Suppressor = "0.1.0 - 0.2.0"
 TensorBoardLogger = "< 0.1.19"
 XML = "0.2.0"
 Zygote = "0.6.26"
-julia = "1.8 - 1.9"
+# Compat fork for Radiationsafety/BSSUnfold.jl: allow Julia 1.10 so the CP solver and the
+# RL heuristic run in one session. Upstream SeaPearl 0.4.5 declares julia = "1.8 - 1.9";
+# no source changes are required (verified on Julia 1.10.4).
+julia = "1.8 - 1.10"
 JSON = "0.21.4"
 
 [extras]
